@@ -1,0 +1,35 @@
+{% extends 'main.html' %}
+
+{% block header %}
+    <legend>
+        Create new event
+    </legend>
+{% endblock %}
+
+{% block body %}
+    <form method="post" action="" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% for field in form %}
+            <div class="form-group">
+                {{ field }}
+            </div>
+        {% endfor %}
+        <div >
+            <input type="submit" class="btn btn-primary" value="Post" style="float: right"/>
+            <a class="btn btn-default"  href="/">Cancel</a>
+        </div>
+    </form>
+    <script>
+        // initialize input widgets first
+        $('.time0, .time1').timepicker({
+            'showDuration': true,
+            'timeFormat': 'g:ia'
+        });
+
+        $('.date0, .date1').datepicker({
+            'format': 'dd-M-yyyy',
+            'autoclose': true
+        });
+    </script>
+
+{% endblock %}

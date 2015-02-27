@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../djappengine/.idea/djappengine.iml" filepath="$PROJECT_DIR$/../djappengine/.idea/djappengine.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/eventsApp.iml" filepath="$PROJECT_DIR$/.idea/eventsApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../djangoApps/lampapp/.idea/lampapp.iml" filepath="$PROJECT_DIR$/../../djangoApps/lampapp/.idea/lampapp.iml" />
     </modules>
   </component>
 </project>
