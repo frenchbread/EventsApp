@@ -8,10 +8,10 @@ class EventForm(forms.ModelForm):
         exclude = ("lat", "lng", "created_at", "timezone")
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Title'}),
-            'details': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Details'}),
-            'start_time': forms.TextInput(attrs={'class': 'form-control time0 start', 'placeholder': '09:00'}),
-            'start_date': forms.TextInput(attrs={'class': 'form-control date0 start', 'placeholder': '10-01-2015'}),
-            'end_time': forms.TextInput(attrs={'class': 'form-control time1 end', 'placeholder': '21:00'}),
-            'end_date': forms.TextInput(attrs={'class': 'form-control date1 end', 'placeholder': '20-01-2015'}),
+            'details': forms.Textarea(attrs={'class': 'form-control dettails', 'placeholder': 'Details'}),
+            'start_time': forms.TextInput(attrs={'class': 'form-control time0 start', 'placeholder': 'Start time'}),
+            'start_date': forms.TextInput(attrs={'class': 'form-control date0 start', 'placeholder': 'Start date'}),
+            'end_time': forms.TextInput(attrs={'class': 'form-control time1 end', 'placeholder': 'End time'}),
+            'end_date': forms.TextInput(attrs={'class': 'form-control date1 end', 'placeholder': 'End date'}),
             'address': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'City, street, house/apartment..'}),
         }
