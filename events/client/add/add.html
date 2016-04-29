@@ -2,4 +2,16 @@
   <div class="page-header">
     <h1>Add New Event</h1>
   </div>
+  <div class="rows">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      {{# autoForm collection="Events" id="insertEventForm" type="insert"}}
+        {{> afQuickField name='name'}}
+        {{> afQuickField name='details'}}
+        {{> afQuickField name='location'}}
+        {{> afQuickField name='date' type='bootstrap-datetimepicker'}}
+      {{/ autoForm }}
+    </div>
+    <div class="col-md-3"></div>
+  </div>
 </template>
