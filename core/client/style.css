@@ -1,0 +1,14 @@
+button#create-event {
+  background-color: rgb(88, 155, 246);
+  border-color: rgb(62, 143, 250);
+  color: #fff;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  margin-left: 20px;
+}
+
+.navbar-custom {
+  background-color: transparent;
+  border: none;
+}
