@@ -20,7 +20,7 @@
   text-overflow: ellipsis;
 }
 
-.event-description {
+.event-details {
   display: block;
   font-size: 1em;
   white-space: nowrap;

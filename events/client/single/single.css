@@ -1,0 +1,18 @@
+.single-event-price {
+  margin-top: 0.8em;
+}
+
+.single-event-cover {
+  width: 100%;
+  height: 300px;
+  background-color: #f7f7f7;
+}
+
+.single-event-info {
+  margin: 10px 0 0;
+  padding: 10px 20px 0;
+}
+
+.single-event-details {
+  text-align: justify;
+}

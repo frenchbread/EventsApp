@@ -18,5 +18,9 @@ Template.singleEvent.helpers({
   event () {
     const instance = Template.instance();
     return instance.event.get();
+  },
+  fromNow (date) {
+
+    return moment(date).fromNow();
   }
 });
