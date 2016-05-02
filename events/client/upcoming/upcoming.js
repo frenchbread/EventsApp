@@ -4,7 +4,7 @@ Template.allEvents.onCreated(function () {
 
   instance.events = new ReactiveVar();
 
-  instance.subscribe("allEvents");
+  instance.subscribe("upcomingEvents");
 
   instance.autorun(() => {
     if (instance.subscriptionsReady()) {

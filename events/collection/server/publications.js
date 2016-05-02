@@ -1,4 +1,4 @@
-Meteor.publish("allEvents", function () {
+Meteor.publish("upcomingEvents", function () {
 
-  return Events.find();
+  return Events.find({ date: { $gte: new Date() }});
 });
