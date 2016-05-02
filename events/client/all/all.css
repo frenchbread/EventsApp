@@ -28,9 +28,13 @@
   text-overflow: ellipsis;
 }
 
-.event-link {
-  float: right;
-  margin-top: 0.8em;
+.event-location-date {
+  display: block;
+  font-size: 0.95em;
+  white-space: nowrap;
+  overflow: hidden;
+  font-style: italic;
+  text-overflow: ellipsis;
 }
 
 .event-logo {
@@ -38,7 +42,7 @@
   float: left;
 }
 
-img {
+.event-logo img {
   max-height: 70px;
   max-width: 70px;
   background: transparent;

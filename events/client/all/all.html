@@ -15,10 +15,10 @@
         <span class="event-description">
           {{ event.details }}
         </span>
-        <a href="/event/{{ event._id }}"
-           class="event-link">
-          More info
-        </a>
+        <span class="event-location-date">
+          <b>{{ event.location }}</b>
+          {{ fromNow event.date }}
+        </span>
       </div>
     </div>
   </div>
