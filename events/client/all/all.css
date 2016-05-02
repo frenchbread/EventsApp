@@ -1,0 +1,45 @@
+.event-card {
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+  padding: 0.5em;
+  overflow: hidden;
+  margin-bottom: 1.3em;
+}
+
+.event-info {
+  padding: 0.3em 0.8em;
+  margin-left: 6em;
+}
+
+.event-name {
+  text-transform: uppercase;
+  display: block;
+  font-size: 1.3em;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-description {
+  display: block;
+  font-size: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-link {
+  float: right;
+  margin-top: 0.8em;
+}
+
+.event-logo {
+  padding: 0.2em;
+  float: left;
+}
+
+img {
+  max-height: 70px;
+  max-width: 70px;
+  background: transparent;
+}
