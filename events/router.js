@@ -4,3 +4,9 @@ FlowRouter.route('/new', {
     BlazeLayout.render('mainLayout', { main: "addEvent" });
   }
 });
+
+FlowRouter.route('/event/:_id', {
+  action: function() {
+    BlazeLayout.render('mainLayout', { main: "singleEvent" });
+  }
+});
