@@ -4,11 +4,11 @@ Template.pastEvents.onCreated(function () {
 
   instance.events = new ReactiveVar();
 
-  instance.subscribe("pastEvents");
+  instance.subscribe("allEvents");
 
   instance.autorun(() => {
     if (instance.subscriptionsReady()) {
-      instance.events.set(Events.find().fetch());
+      instance.events.set(Events.find({ date: { $lte: new Date() } }).fetch());
     }
   })
 })

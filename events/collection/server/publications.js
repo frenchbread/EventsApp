@@ -1,11 +1,6 @@
-Meteor.publish("upcomingEvents", function () {
+Meteor.publish("allEvents", function () {
 
-  return Events.find({ date: { $gte: new Date() }});
-});
-
-Meteor.publish("pastEvents", function () {
-
-  return Events.find({ date: { $lte: new Date() }});
+  return Events.find();
 });
 
 Meteor.publish("singleEvent", function (eventId) {

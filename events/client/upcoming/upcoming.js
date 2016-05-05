@@ -4,11 +4,11 @@ Template.upcommingEvents.onCreated(function () {
 
   instance.events = new ReactiveVar();
 
-  instance.subscribe("upcomingEvents");
+  instance.subscribe("allEvents");
 
   instance.autorun(() => {
     if (instance.subscriptionsReady()) {
-      instance.events.set(Events.find().fetch());
+      instance.events.set(Events.find({ date: { $gte: new Date() } }).fetch());
     }
   })
 })
