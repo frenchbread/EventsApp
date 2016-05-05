@@ -1,43 +1,53 @@
 <template name="singleEvent">
-  <div class="page-header">
-    <h1>
-      {{ event.name }}
-      <small class="pull-right single-event-price" >Free</small>
-    </h1>
-  </div>
   <div class="row">
-    <div class="col-md-9">
-      <div class="single-event-cover"></div>
-
-      <h3>Comments</h3>
-
-      <i>Comments will be here.</i>
+    <div class="col-md-2">
 
     </div>
-    <div class="col-md-3">
-      <button type="button" name="button" class="btn btn-primary btn-block">Going</button>
-      <button type="button" name="button" class="btn btn-warning btn-block">
-        <span class="glyphicon glyphicon-star-empty"></span>
-        Add to favorites
-      </button>
+    <div class="col-md-8">
+      <div class="page-header">
+        <h1>
+          {{ event.name }}
+          <small class="pull-right single-event-price" >Free</small>
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col-md-9">
+          <div class="single-event-cover"></div>
 
-      <div class="single-event-info">
-        <div class="single-event-details">
-          <span class="glyphicon glyphicon-info-sign"></span> {{ event.details }}
+          <h3>Comments</h3>
+
+          <i>Comments will be here.</i>
+
+        </div>
+        <div class="col-md-3">
+          <button type="button" name="button" class="btn btn-primary btn-block">Going</button>
+          <button type="button" name="button" class="btn btn-warning btn-block">
+            <span class="glyphicon glyphicon-star-empty"></span>
+            Add to favorites
+          </button>
+
+          <div class="single-event-info">
+            <div class="single-event-details">
+              <span class="glyphicon glyphicon-info-sign"></span> {{ event.details }}
+            </div>
+          </div>
+
+          <div class="single-event-info">
+            <div class="single-event-details">
+              <span class="glyphicon glyphicon-map-marker"></span> {{ event.location }}
+            </div>
+          </div>
+
+          <div class="single-event-info">
+            <div class="single-event-details">
+              <span class="glyphicon glyphicon-time"></span> {{ fromNow event.date }}
+            </div>
+          </div>
+
         </div>
       </div>
-
-      <div class="single-event-info">
-        <div class="single-event-details">
-          <span class="glyphicon glyphicon-map-marker"></span> {{ event.location }}
-        </div>
-      </div>
-
-      <div class="single-event-info">
-        <div class="single-event-details">
-          <span class="glyphicon glyphicon-time"></span> {{ fromNow event.date }}
-        </div>
-      </div>
+    </div>
+    <div class="col-md-2">
 
     </div>
   </div>
