@@ -17,9 +17,5 @@ Template.upcommingEvents.helpers({
   events () {
     const instance = Template.instance();
     return instance.events.get();
-  },
-  fromNow (date) {
-
-    return moment(date).fromNow();
   }
 })
