@@ -1,4 +1,4 @@
-Template.allEvents.onCreated(function () {
+Template.upcommingEvents.onCreated(function () {
 
   const instance = this;
 
@@ -13,7 +13,7 @@ Template.allEvents.onCreated(function () {
   })
 })
 
-Template.allEvents.helpers({
+Template.upcommingEvents.helpers({
   events () {
     const instance = Template.instance();
     return instance.events.get();
