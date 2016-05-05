@@ -29,8 +29,3 @@ body {
     background: -moz-linear-gradient(#fff, rgb(209,217,226)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#fff, rgb(209,217,226)); /* Standard syntax */
 }
-
-#main-search-text {
-  border: none;
-  padding: 2em;
-}
