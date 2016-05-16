@@ -1,5 +1,11 @@
 <template name="upcommingEvents">
-  {{ # each event in events }}
-    {{ > eventItem event=event}}
-  {{ / each }}
+  {{ # if events.length }}
+    {{ # each event in events }}
+      {{ > eventItem event=event}}
+    {{ / each }}
+  {{ else }}
+    <div class="text-center">
+      <i >You don't have any uncomming events.</i>
+    </div>
+  {{ / if }}
 </template>
