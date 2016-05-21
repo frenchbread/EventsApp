@@ -1,5 +1,5 @@
 <template name="mainSearch">
-  <form class="" action="#" >
+  <form id="main-search" >
     <div class="form-group">
      <input
       type="text"
@@ -8,4 +8,12 @@
       placeholder="Search for event ..">
    </div>
   </form>
+
+  {{ # if searchResults }}
+    {{ # each event in searchResults }}
+      <p>
+        {{ event.name }}
+      </p>
+    {{ / each }}
+  {{ / if }}
 </template>
