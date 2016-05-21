@@ -18,7 +18,7 @@ Template.mainSearch.helpers({
 });
 
 Template.mainSearch.events({
-  'submit #main-search': function (event, template) {
+  'keyup #main-search-text': function (event, template) {
 
     event.preventDefault();
 

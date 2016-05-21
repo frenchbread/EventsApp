@@ -9,11 +9,16 @@
    </div>
   </form>
 
-  {{ # if searchResults }}
-    {{ # each event in searchResults }}
-      <p>
-        {{ event.name }}
-      </p>
-    {{ / each }}
+  {{ # if searchResults.length }}
+    <div class="page-header">
+      <h3>
+        Search results ({{ searchResults.length }})
+      </h3>
+    </div>
+    <div class="row">
+      {{ # each event in searchResults }}
+        {{ > eventItem event=event}}
+      {{ / each }}
+    </div>
   {{ / if }}
 </template>

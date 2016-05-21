@@ -1,9 +1,11 @@
 Meteor.methods({
   searchEvents (searchValue) {
 
-    searchValue = searchValue.trim();
+    if (!searchValue || searchValue === '') {
+      return {}
+    }
 
-    console.log(searchValue)
+    searchValue = searchValue.trim();
 
     const query = {
       $or: [
