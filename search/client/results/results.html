@@ -1,13 +1,5 @@
-<template name="mainSearch">
-  <form id="main-search" >
-    <div class="form-group">
-     <input
-      type="text"
-      class="form-control"
-      id="main-search-text"
-      placeholder="Search for event ..">
-   </div>
-  </form>
+<template name="searchResults">
+  {{ > searchForm }}
 
   {{ # if searchResults.length }}
     <div class="page-header">
