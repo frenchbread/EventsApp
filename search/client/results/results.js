@@ -22,14 +22,6 @@ Template.searchResults.onCreated(function () {
 
 });
 
-Template.searchResults.onRendered(function () {
-
-  const instance = this;
-
-  $('#main-search-text').val(instance.searchValue.get());
-
-});
-
 Template.searchResults.helpers({
   searchResults () {
 
@@ -38,5 +30,11 @@ Template.searchResults.helpers({
     const searchResults = instance.searchResults.get();
 
     return searchResults;
+  },
+  searchValue () {
+
+    const instance = Template.instance();
+
+    return instance.searchValue.get();
   }
 })
